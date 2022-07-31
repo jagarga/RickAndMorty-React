@@ -20,7 +20,8 @@
     "start": "npm run start-dev",
     "start:dev": "webpack serve --config=configs/webpack/dev.js",
     "start:prod": "npm run build && node express.js",
-    "test": "jest --coverage --watchAll --config=configs/jest.json"
+    "test": "jest --coverage --watchAll --config=configs/jest.json",
+    "prepare": "husky install"
   },
   "dependencies": {
     "@babel/core": "^7.17.10",
@@ -59,6 +60,7 @@
     "image-webpack-loader": "^8.1.0",
     "jest": "^28.1.0",
     "jest-environment-jsdom": "^28.1.0",
+    "lint-staged": "^13.0.3",
     "module-name": "^0.0.1-security",
     "prettier": "^2.6.2",
     "prop-types": "^15.8.1",
@@ -82,7 +84,14 @@
     "webpack-merge": "^5.8.0"
   },
   "devDependencies": {
+    "@commitlint/cli": "^17.0.3",
+    "@commitlint/config-conventional": "^17.0.3",
     "@types/redux-logger": "^3.0.9",
-    "redux-logger": "^3.0.6"
+    "husky": "^8.0.0",
+    "redux-logger": "^3.0.6",
+    "stylelint": "^14.9.1",
+    "stylelint-config-recommended": "^8.0.0",
+    "stylelint-config-recommended-scss": "^7.0.0",
+    "stylelint-scss": "^4.3.0"
   }
 }
