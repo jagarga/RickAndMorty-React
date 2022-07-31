@@ -21,6 +21,7 @@
     "start:dev": "webpack serve --config=configs/webpack/dev.js",
     "start:prod": "npm run build && node express.js",
     "test": "jest --coverage --watchAll --config=configs/jest.json",
+    "test:push": "jest --coverage --config=configs/jest.json",
     "prepare": "husky install"
   },
   "dependencies": {
